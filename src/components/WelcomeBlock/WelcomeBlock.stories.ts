@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Sidebar from './Sidebar'
+import WelcomeBlock from './WelcomeBlock'
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
-const meta: Meta<typeof Sidebar> = {
-  title: 'Components/Sidebar',
-  component: Sidebar,
+const meta: Meta<typeof WelcomeBlock> = {
+  title: 'Components/WelcomeBlock',
+  component: WelcomeBlock,
   argTypes: {
     backgroundColor: {
       control: 'color',
@@ -14,12 +14,12 @@ const meta: Meta<typeof Sidebar> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Sidebar>
+type Story = StoryObj<typeof WelcomeBlock>
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
-export const Default: Story = {
+export const Default :Story = {
   args: {
     primary: true,
-    label: 'Sidebar',
+    label: 'WelcomeBlock',
   },
 }
