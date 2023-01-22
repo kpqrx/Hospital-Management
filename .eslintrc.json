@@ -1,6 +1,21 @@
 {
   "extends": [
+    "next",
     "next/core-web-vitals",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        "@typescript-eslint/no-empty-interface": 0
+      }
+    }
   ]
 }
