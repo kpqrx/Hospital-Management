@@ -13,6 +13,7 @@ export const theme = {
     xxxl: '82px',
     xxxxl: '112px',
     sidebar: '280px',
+    topDecorator: '180px',
   },
   color: {
     white: 'hsl(0, 0%, 98%)',
