@@ -1,7 +1,7 @@
-import type { IconType } from 'react-icons/lib'
+import { IconNameType } from '../Icon/Icon.types'
 
 export type NavigationItemType = {
-  icon: IconType
+  icon: IconNameType
   label: string
   href: string
 }

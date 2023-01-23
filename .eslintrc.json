@@ -16,6 +16,12 @@
       "rules": {
         "@typescript-eslint/no-empty-interface": 0
       }
+    },
+    {
+      "files": ["*.styled.ts"],
+      "rules": {
+        "operator-linebreak": 0
+      }
     }
   ]
 }

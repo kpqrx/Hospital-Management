@@ -9,21 +9,18 @@ export const StyledContainer = styled.ul`
   width: 100%;
 `
 
-export const StyledLink = styled(Link)`
+export const StyledNavigationItem = styled(Link)`
   display: flex;
-  gap: ${({ theme }) => theme.size.sm};
-  align-items: center;
+  gap: ${({ theme }) => theme.size.md};
   padding: ${({ theme }) => `${theme.size.sm} ${theme.size.xl}`};
-  width: 100%;
   border-radius: ${({ theme }) => theme.size.md};
+  justify-content: flex-start;
+  width: 100%;
+  white-space: nowrap;
+  transition: ${({ theme }) => theme.transition};
 
   &:hover,
   &:active {
     background-color: ${({ theme }) => theme.color.gray[100]};
-  }
-
-  svg {
-    width: 20px;
-    height: 20px;
   }
 `

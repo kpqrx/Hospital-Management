@@ -30,6 +30,7 @@ export const theme = {
   shadow: {
     box: '0px 4px 12px 2px hsla(0, 0%, 0%, 8%);',
   },
+  transition: 'all 0.225s cubic-bezier(.33,.14,0,1.01)',
   font: {
     family: 'Poppins, sans-serif',
     weight: '400',

@@ -1,33 +1,33 @@
 import Logo from '@/components/Logo/Logo'
 import { StyledContainer } from './Sidebar.styled'
-import { HiChartPie, HiClock, HiCalendar, HiCash, HiSun } from 'react-icons/hi'
 import WelcomeBlock from '../WelcomeBlock/WelcomeBlock'
 import Navigation from '../Navigation/Navigation'
 import type { NavigationItemType } from '../Navigation/Navigation.types'
+import Button from '../Button/Button'
 
 const navigationItems: NavigationItemType[] = [
   {
-    icon: HiChartPie,
+    icon: 'ChartPie',
     label: 'Panel pracownika',
     href: '#',
   },
   {
-    icon: HiClock,
+    icon: 'Clock',
     label: 'Czas pracy',
     href: '#',
   },
   {
-    icon: HiCalendar,
+    icon: 'Calendar',
     label: 'Dyzury',
     href: '#',
   },
   {
-    icon: HiCash,
+    icon: 'Cash',
     label: 'Wynagrodzenia',
     href: '#',
   },
   {
-    icon: HiSun,
+    icon: 'Sun',
     label: 'Urlopy',
     href: '#',
   },
@@ -39,6 +39,7 @@ function Sidebar() {
       <Logo />
       <WelcomeBlock />
       <Navigation items={navigationItems} />
+      <Button icon={{ name: 'Logout' }}>Wyloguj się</Button>
     </StyledContainer>
   )
 }

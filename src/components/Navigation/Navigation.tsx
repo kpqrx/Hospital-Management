@@ -1,4 +1,5 @@
-import { StyledContainer, StyledLink } from './Navigation.styled'
+import Icon from '../Icon/Icon'
+import { StyledContainer, StyledNavigationItem } from './Navigation.styled'
 import { NavigationProps } from './Navigation.types'
 
 function Navigation(props: NavigationProps) {
@@ -6,12 +7,12 @@ function Navigation(props: NavigationProps) {
 
   return (
     <StyledContainer>
-      {items.map(({ icon: Icon, label, href }, index) => (
+      {items.map(({ icon, label, href }, index) => (
         <li key={index}>
-          <StyledLink href={href}>
-            <Icon />
+          <StyledNavigationItem href={href}>
+            <Icon name={icon} />
             {label}
-          </StyledLink>
+          </StyledNavigationItem>
         </li>
       ))}
     </StyledContainer>

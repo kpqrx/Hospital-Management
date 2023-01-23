@@ -6,6 +6,7 @@ import {
   StyledName,
 } from './WelcomeBlock.styled'
 import avatarSrc from '@/assets/avatar.png'
+import IconButton from '../IconButton/IconButton'
 
 function WelcomeBlock() {
   return (
@@ -19,8 +20,15 @@ function WelcomeBlock() {
         <StyledName>Anno!</StyledName>
       </StyledGreetings>
       <StyledControlPanel>
-        <button>xd</button>
-        <button>xd</button>
+        <IconButton
+          icon="Bell"
+          label="Powiadomienia"
+          hasBadge
+        />
+        <IconButton
+          icon="Cog"
+          label="Ustawienia"
+        />
       </StyledControlPanel>
     </StyledContainer>
   )
