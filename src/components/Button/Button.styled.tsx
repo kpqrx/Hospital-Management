@@ -24,4 +24,19 @@ export const StyledContainer = styled.button<StyledContainerProps>`
         background-color: ${theme.color.gray[100]};
       }
     `};
+
+  ${({ theme, variant }) =>
+    variant === 'secondary' &&
+    css`
+      font-size: ${({ theme }) => theme.font.size.xs};
+      text-transform: uppercase;
+      padding: ${`${theme.size.xs} ${theme.size.md}`};
+      border-radius: ${theme.size.xs};
+      border: 2px solid ${({ theme }) => theme.color.gray[300]};
+
+      &:hover,
+      &:active {
+        border-color: ${theme.color.gray[400]};
+      }
+    `};
 `

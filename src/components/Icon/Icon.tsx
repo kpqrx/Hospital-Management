@@ -3,6 +3,12 @@ import dynamic from 'next/dynamic'
 import type { IconType } from 'react-icons/lib'
 import type { IconProps } from './Icon.types'
 
+const colors = {
+  black: theme.color.black,
+  white: theme.color.white,
+  gray: theme.color.gray[300],
+}
+
 function Icon(props: IconProps) {
   const { name, size = 20, color = 'black', ...restProps } = props
 
@@ -24,7 +30,7 @@ function Icon(props: IconProps) {
   return (
     <LoadedIcon
       size={size}
-      color={theme.color[color]}
+      color={colors[color]}
       {...restProps}
     />
   )

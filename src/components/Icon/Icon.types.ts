@@ -7,9 +7,10 @@ export type IconNameType =
   | 'Cash'
   | 'Sun'
   | 'Logout'
+  | 'ChevronRight'
 
 export interface IconProps {
   name: IconNameType
   size?: number
-  color?: 'white' | 'black'
+  color?: 'white' | 'black' | 'gray'
 }

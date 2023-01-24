@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const StyledContainer = styled.article`
   background-color: ${({ theme }) => theme.color.white};
   border-radius: ${({ theme }) => theme.size.lg};
-  padding: ${({ theme }) => theme.size.md};
+  padding: ${({ theme }) =>
+    `${theme.size.xs} ${theme.size.lg} ${theme.size.md}`};
   break-inside: avoid;
 `
 
@@ -12,7 +13,8 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   height: ${({ theme }) => theme.size.xxl};
-  line-height: ${({ theme }) => theme.size.xxl};
+  padding-bottom: ${({ theme }) => theme.size.md};
+  margin: ${({ theme }) => theme.size.md} 0;
   border-bottom: 1px solid ${({ theme }) => theme.color.gray[200]};
 `
 

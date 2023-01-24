@@ -15,19 +15,29 @@ export const StyledContainer = styled.div`
 `
 
 export const StyledSidebarWrapper = styled.div`
+  position: sticky;
+  top: 0;
   padding: ${({ theme }) =>
     `${theme.size.lg} 0 ${theme.size.lg} ${theme.size.lg}`};
 `
 
 export const StyledMainWrapper = styled.main`
   flex: 1;
-  padding: ${({ theme }) => `${theme.size.lg} ${theme.size.xxxxl}`};
+  padding: 0 ${({ theme }) => theme.size.xxxxl};
   margin-top: ${({ theme }) => theme.size.topDecorator};
 `
 
 export const StyledHeading = styled.h1`
   font-size: ${({ theme }) => theme.font.size.lg};
   line-height: ${({ theme }) => theme.size.xxl};
+  padding-top: ${({ theme }) => theme.size.lg};
+  position: sticky;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    ${({ theme }) => theme.color.gray[50]} 50%,
+    transparent
+  );
   margin-bottom: ${({ theme }) => theme.size.lg};
 `
 
