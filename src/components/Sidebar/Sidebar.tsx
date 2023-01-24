@@ -9,7 +9,7 @@ const navigationItems: NavigationItemType[] = [
   {
     icon: 'ChartPie',
     label: 'Panel pracownika',
-    href: '#',
+    href: '/',
   },
   {
     icon: 'Clock',
@@ -19,7 +19,7 @@ const navigationItems: NavigationItemType[] = [
   {
     icon: 'Calendar',
     label: 'Dyzury',
-    href: '#',
+    href: '/shifts',
   },
   {
     icon: 'Cash',
