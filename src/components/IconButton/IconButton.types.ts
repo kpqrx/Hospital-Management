@@ -1,4 +1,4 @@
-import { IconNameType } from '../Icon/Icon.types'
+import type { IconNameType } from '../Icon/Icon.types'
 
 export interface IconButtonProps {
   label: string

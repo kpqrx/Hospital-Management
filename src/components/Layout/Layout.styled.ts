@@ -18,10 +18,22 @@ export const StyledSidebarWrapper = styled.div`
   padding: ${({ theme }) =>
     `${theme.size.lg} 0 ${theme.size.lg} ${theme.size.lg}`};
 `
-export const StyledContentWrapper = styled.main`
+
+export const StyledMainWrapper = styled.main`
+  flex: 1;
+  padding: ${({ theme }) => `${theme.size.lg} ${theme.size.xxxxl}`};
+  margin-top: ${({ theme }) => theme.size.topDecorator};
+`
+
+export const StyledHeading = styled.h1`
+  font-size: ${({ theme }) => theme.font.size.lg};
+  line-height: ${({ theme }) => theme.size.xxl};
+  margin-bottom: ${({ theme }) => theme.size.lg};
+`
+
+export const StyledContentWrapper = styled.div`
+  min-height: 100%;
   columns: 2 auto;
   column-gap: ${({ theme }) => theme.size.xxxl};
-  padding: ${({ theme }) => `${theme.size.lg} ${theme.size.xxxxl}`};
-  flex: 1;
-  margin-top: ${({ theme }) => theme.size.topDecorator};
+  column-fill: auto;
 `

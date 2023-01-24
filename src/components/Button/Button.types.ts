@@ -1,5 +1,5 @@
-import { PropsWithChildren } from 'react'
-import { IconNameType } from '../Icon/Icon.types'
+import type { PropsWithChildren } from 'react'
+import type { IconNameType } from '../Icon/Icon.types'
 
 type ButtonVariantType = 'primary' | 'secondary' | 'tertiary' | 'quaternary'
 

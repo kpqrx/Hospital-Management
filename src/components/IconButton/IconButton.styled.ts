@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { StyledContainerProps } from './IconButton.types'
+import type { StyledContainerProps } from './IconButton.types'
 
 export const StyledLabel = styled.span`
   position: absolute;

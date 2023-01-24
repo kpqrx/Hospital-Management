@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Icon from './Icon'
-import { IconNameType } from './Icon.types'
+import type { IconNameType } from './Icon.types'
 
 const iconNames = [
   'Bell',

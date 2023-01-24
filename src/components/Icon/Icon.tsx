@@ -1,7 +1,7 @@
 import { theme } from '@/theme'
 import dynamic from 'next/dynamic'
-import { IconType } from 'react-icons/lib'
-import { IconProps } from './Icon.types'
+import type { IconType } from 'react-icons/lib'
+import type { IconProps } from './Icon.types'
 
 function Icon(props: IconProps) {
   const { name, size = 20, color = 'black', ...restProps } = props

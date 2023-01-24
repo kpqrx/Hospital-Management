@@ -13,12 +13,13 @@ export const theme = {
     xxxl: '82px',
     xxxxl: '112px',
     sidebar: '280px',
-    topDecorator: '180px',
+    topDecorator: '128px',
   },
   color: {
     white: 'hsl(0, 0%, 98%)',
     black: 'hsl(0, 0%, 2%)',
     gray: {
+      50: 'hsl(0, 0%, 96%)',
       100: 'hsl(0, 0%, 94%)',
       200: 'hsl(0, 0%, 86%)',
       300: 'hsl(0, 0%, 70%)',
@@ -31,7 +32,7 @@ export const theme = {
   shadow: {
     box: '0px 4px 12px 2px hsla(0, 0%, 0%, 8%);',
   },
-  transition: 'all 0.225s cubic-bezier(.33,.14,0,1.01)',
+  transition: 'all 0.375s cubic-bezier(.33,.14,0,1.01)',
   font: {
     family: 'Poppins, sans-serif',
     weight: '400',
@@ -53,6 +54,11 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: ${theme.font.size.default};
     font-family: ${theme.font.family};
+    font-weight: ${theme.font.weight};
+  }
+
+  body {
+    background-color: ${theme.color.gray[50]};
   }
 
   *, *::before, *::after {

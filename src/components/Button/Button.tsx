@@ -1,5 +1,5 @@
 import { StyledContainer } from './Button.styled'
-import { ButtonProps } from './Button.types'
+import type { ButtonProps } from './Button.types'
 import Icon from '../Icon/Icon'
 
 function Button(props: ButtonProps) {

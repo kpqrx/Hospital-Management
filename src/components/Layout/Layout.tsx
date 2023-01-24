@@ -1,22 +1,26 @@
-import { PropsWithChildren } from 'react'
+import { font } from '@/theme'
+import type { LayoutProps } from './Layout.types'
 import Sidebar from '../Sidebar/Sidebar'
 import {
   StyledContainer,
   StyledSidebarWrapper,
+  StyledMainWrapper,
   StyledContentWrapper,
+  StyledHeading,
 } from './Layout.styled'
 
-import { font } from '@/theme'
-
-function Layout(props: PropsWithChildren) {
-  const { children } = props
+function Layout(props: LayoutProps) {
+  const { children, heading } = props
 
   return (
     <StyledContainer className={font.className}>
       <StyledSidebarWrapper>
         <Sidebar />
       </StyledSidebarWrapper>
-      <StyledContentWrapper>{children}</StyledContentWrapper>
+      <StyledMainWrapper>
+        <StyledHeading>{heading}</StyledHeading>
+        <StyledContentWrapper>{children}</StyledContentWrapper>
+      </StyledMainWrapper>
     </StyledContainer>
   )
 }

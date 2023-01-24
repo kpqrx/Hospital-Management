@@ -1,6 +1,6 @@
 import Icon from '../Icon/Icon'
 import { StyledContainer, StyledNavigationItem } from './Navigation.styled'
-import { NavigationProps } from './Navigation.types'
+import type { NavigationProps } from './Navigation.types'
 
 function Navigation(props: NavigationProps) {
   const { items = [] } = props
