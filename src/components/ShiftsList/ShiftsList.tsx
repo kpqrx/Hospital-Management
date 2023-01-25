@@ -26,10 +26,13 @@ function ShiftsList() {
           <StyledItem key={index}>
             <StyledItemIcon
               name="Bookmark"
-              color="black"
               size={24}
             />
-            <StyledItemLabel>{shift.shiftKind}</StyledItemLabel>
+            <StyledItemLabel>
+              {shift.shiftKind}
+              <br />
+              {shift.shiftPlace}
+            </StyledItemLabel>
             <StyledItemDate>
               {shift.shiftDate}
               <br />

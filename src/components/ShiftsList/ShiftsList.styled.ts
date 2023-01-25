@@ -24,8 +24,6 @@ export const StyledItemLabel = styled.h3`
 `
 
 export const StyledItemDate = styled.div`
-  font-size: ${({ theme }) => theme.font.size.xs};
-  line-height: 2;
   text-align: right;
   color: ${({ theme }) => theme.color.gray[300]};
 `

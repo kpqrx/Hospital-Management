@@ -42,5 +42,4 @@ export const StyledDetailsItem = styled.li`
   gap: ${({ theme }) => theme.size.xs};
   color: ${({ theme }) => theme.color.gray[300]};
   flex-basis: 50%;
-  font-size: ${({ theme }) => theme.font.size.xs};
 `
