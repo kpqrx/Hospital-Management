@@ -2,6 +2,11 @@ import type { PropsWithChildren } from 'react'
 import { ThemeProvider as Provider, createGlobalStyle } from 'styled-components'
 import { Poppins } from '@next/font/google'
 
+const font = Poppins({
+  weight: '400',
+  subsets: ['latin', 'latin-ext'],
+})
+
 export const theme = {
   size: {
     xs: '8px',
@@ -34,8 +39,9 @@ export const theme = {
   },
   transition: 'all 0.375s cubic-bezier(.33,.14,0,1.01)',
   font: {
-    family: 'Poppins, sans-serif',
-    weight: '400',
+    family: font.style.fontFamily,
+    weight: font.style.fontWeight,
+    style: font.style.fontStyle,
     size: {
       default: '14px',
       xs: '10px',
@@ -45,16 +51,12 @@ export const theme = {
   },
 }
 
-export const font = Poppins({
-  weight: '400',
-  subsets: ['latin'],
-})
-
 const GlobalStyles = createGlobalStyle`
   html {
     font-size: ${theme.font.size.default};
     font-family: ${theme.font.family};
     font-weight: ${theme.font.weight};
+    font-style: ${theme.font.style};
   }
 
   body {

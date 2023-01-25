@@ -1,4 +1,3 @@
-import { font } from '@/theme'
 import type { LayoutProps } from './Layout.types'
 import Sidebar from '../Sidebar/Sidebar'
 import {
@@ -13,7 +12,7 @@ function Layout(props: LayoutProps) {
   const { children, heading } = props
 
   return (
-    <StyledContainer className={font.className}>
+    <StyledContainer>
       <StyledSidebarWrapper>
         <Sidebar />
       </StyledSidebarWrapper>
