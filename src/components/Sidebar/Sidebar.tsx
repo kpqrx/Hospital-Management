@@ -18,7 +18,7 @@ const navigationItems: NavigationItemType[] = [
   },
   {
     icon: 'Calendar',
-    label: 'Dyzury',
+    label: 'Dyżury',
     href: '/shifts',
   },
   {

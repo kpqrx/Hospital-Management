@@ -8,6 +8,8 @@ export type IconNameType =
   | 'Sun'
   | 'Logout'
   | 'ChevronRight'
+  | 'UserCircle'
+  | 'Bookmark'
 
 export interface IconProps {
   name: IconNameType

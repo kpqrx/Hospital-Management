@@ -6,6 +6,7 @@ export const StyledContainer = styled.article`
   padding: ${({ theme }) =>
     `${theme.size.xs} ${theme.size.lg} ${theme.size.md}`};
   break-inside: avoid;
+  margin-bottom: ${({ theme }) => theme.size.xxl};
 `
 
 export const StyledHeader = styled.div`

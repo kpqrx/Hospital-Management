@@ -39,4 +39,23 @@ export const StyledContainer = styled.button<StyledContainerProps>`
         border-color: ${theme.color.gray[400]};
       }
     `};
+
+  ${({ theme, variant }) =>
+    variant === 'tertiary' &&
+    css`
+      padding: ${`${theme.size.sm} ${theme.size.xl}`};
+      border-radius: ${theme.size.md};
+      background-color: ${({ theme }) => theme.color.gray[400]};
+      color: ${({ theme }) => theme.color.white};
+
+      &:hover,
+      &:active {
+        background-color: ${theme.color.black};
+      }
+
+      // TODO: Remove temporary styles
+      align-self: flex-start;
+      width: 280px;
+      margin-top: 16px;
+    `};
 `
